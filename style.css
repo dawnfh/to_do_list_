@@ -1,0 +1,86 @@
+body{
+    background-color:#f2e258;
+    font-family: 'Satisfy', cursive;
+}
+
+.todolist{
+    background-color:#3ca4d6;
+    padding:20px 20px 10px 20px;
+    margin-top:30px;
+}
+
+.todolist h1{
+    margin:0;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.form-control{
+    border-radius:0;
+}
+
+li.ui-state-default{
+    background:#fff;
+    border: none;
+}
+
+li.ui-state-default:last-child{
+    border-bottom:none;
+}
+
+.todo-footer{
+    background-color:#bbbbbb;
+    margin:0 -20px -10px -20px;
+    padding: 10px 20px;
+}
+
+#done-items li{
+    padding:10px 0;
+    border-bottom:1px dashed #ddd;
+    text-decoration:line-through;
+}
+
+#done-items li:last-child{
+    border-bottom:none;
+}
+
+/* button effect with gradient */
+#checkAll{
+    background: #f2e258;
+    color: #000000;
+    border: 2px solid #eee;
+    height: 23px;
+    width: 72px;
+    margin: -26px 0 16px 136px;
+    padding: 0 0 0 7px;
+    overflow: hidden;
+    display: block;
+    border-radius: 15px;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+    background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+}
+
+/* button effect with hover */
+#checkAll:hover{
+    background-color: #pink;
+    width: 200px;
+}
+
+/* remove link underline */
+a{
+    text-decoration: none;
+}
+
+img{
+    display: inline-block;
+    list-style: none;
+    width: 300px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#scroller{}
