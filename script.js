@@ -83,4 +83,17 @@ function AllDone(){
 function removeItem(element){
     $(element).parent().remove();
 }
-})
+
+//  //on DOM ready 
+// (function($) {        
+//     $(function() {
+//     $("#scroller").scrollLeft({
+//     autoMode: 'loop',
+//     width: 3000,
+//     startOnLoad: true });       
+//       $("#scroller .simply-scroll-list").css({
+//           "width":"auto"
+//       });
+//     });
+//  })(jQuery);
+});

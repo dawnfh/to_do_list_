@@ -50,8 +50,8 @@ li.ui-state-default:last-child{
     color: #000000;
     border: 2px solid #eee;
     height: 23px;
-    width: 72px;
-    margin: -26px 0 16px 136px;
+    width: 62px;
+    margin: -26px 0 16px 150px;
     padding: 0 0 0 7px;
     overflow: hidden;
     display: block;
@@ -74,13 +74,50 @@ a{
     text-decoration: none;
 }
 
-img{
-    display: inline-block;
+ul {
     list-style: none;
-    width: 300px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto 
 }
 
-#scroller{}
+img{
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+#scroller{
+
+}
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+    position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+    position: relative;
+    overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+.simply-scroll-list li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+    
+.simply-scroll-list li img {
+    border: none;
+    display: block;
+}
