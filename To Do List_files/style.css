@@ -6,9 +6,6 @@ body{
     background-color:#f2e258;
     font-family: 'Satisfy', cursive;
 }
-h1{
-    display: none;
-}
 
 .todolist{
     background-color:#3ca4d6;
@@ -81,37 +78,41 @@ a{
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-img{
-    
-    margin: 0 auto;
-    float: left;
+/*img{*/
+    /*width: 300px; 
+    height: 300px; 
+    margin: 0 auto;*/
+    /*float: left;
+    width: 300px;
+    height: 300px;
     margin: auto;
-    padding: 5px;
-}
+    margin-left: 10px;
+    padding: 5px;*/
+/*}*/
 
-#scroller{
+#scroller {
         position: relative;
-}
-#scroller .img_scroll{
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-#scroller ul{
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-#scroller li 
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    position: absolute;
-}
+    }
+    #scroller .img {
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    #scroller ul {
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    #scroller li {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        position: absolute;
+    }

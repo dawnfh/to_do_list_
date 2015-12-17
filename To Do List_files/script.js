@@ -1,10 +1,23 @@
 // resources: http://www.dwuser.com/education/content/creating-a-jquery-image-scroller/
 
-$(document).ready(function(){
 
-// toggle h1 
-    $('h1').toggle( "slow", "swing", "complete" );
-});
+
+$(document).ready(function(){
+    
+
+
+
+// $("#scroller").scrollLeft({
+//     autoMode: 'loop',
+//     width: 3000,
+//     startOnLoad: true });
+
+//       $("#scroller .simply-scroll-list").css({
+//           "width":"auto"
+//       });
+// countTodos();
+
+
 
 // all done btn
 $("#checkAll").click(function(){
@@ -12,12 +25,12 @@ $("#checkAll").click(function(){
 });
 
 //create list
-$('.add-todo').on('keypress',function (e){
+$('.add-todo').on('keypress',function (e) {
       e.preventDefault;
       if (e.which == 13) {
-           if($(this).val() !== ''){
+           if($(this).val() != ''){
            var todo = $(this).val();
-            createTodo(todo);
+            createTodo(todo); 
             countTodos();
            }else{
                // some validation
@@ -66,7 +79,7 @@ function AllDone(){
     var myArray = [];
 
     $('#sortable li').each( function() {
-        myArray.push($(this).text());
+    	myArray.push($(this).text());  
     });
     
     // add to done
@@ -83,10 +96,6 @@ function AllDone(){
 function removeItem(element){
     $(element).parent().remove();
 
-}
-
-$(document).ready(function(){
-
     var scroller = $('#scroller div.innerScrollArea');
     var scrollerContent = scroller.children('ul');
     scrollerContent.children().clone().appendTo(scrollerContent);
@@ -99,5 +108,6 @@ $(document).ready(function(){
     var fullW = curX / 2;
     var viewportW = scroller.width();
     scroller.css('overflow-x', 'auto');
-});
+}
 
+});
